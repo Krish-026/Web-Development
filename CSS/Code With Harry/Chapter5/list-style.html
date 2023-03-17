@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+
+        /* Learn  */
+        /* list-tile property */
+        li{
+            list-style: square inside ;
+            width: 20px;
+        }
+
+        header{
+            background-color: black;
+            color: white;
+            height: 70px;
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+        }
+        .pfirst{
+            text-align: center;
+            border: 2px solid red;
+            height: 1000px;
+            height: 100px;
+        }
+        .container{
+            background-color: aqua;
+            height:  50vh;
+            height: 500px;
+            width: 50vw;
+            margin: auto;
+            padding: 0 34px;
+        }
+
+        /* Position : static, relative */
+        /* top, down, left, right  */
+        /* .box{
+            height: 150px;
+            width: 150px;
+            background-color: greenyellow;
+            position: static;
+        } */
+        /* .box2{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(244, 183, 113);
+            position: static;
+        } */
+
+
+
+        /* .box{
+            height: 150px;
+            width: 150px;
+            background-color: greenyellow;
+            position: absolute;
+        } */
+
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: greenyellow;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .box2{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(244, 183, 113);
+            position: static;
+        }
+        .like{
+            height: 20px;
+            width: 100px;
+            background-color: rgb(14, 14, 14);
+            position: relative;
+            color:white;
+            font-size: 15px;
+            top: -338px;
+            left: 771px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p class="pfirst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos quis exercitationem nobis pariatur illum quam at ea, id laborum iste repudiandae harum nulla aliquam odit facere. Impedit eligendi ex fugit nostrum non sed minus numquam esse officia, mollitia voluptate.</p>
+        <div class="box">I am a box</div>
+        <div class="box2">I am box 2</div>
+        <div class="like">Like button</div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+</body>
+</html>

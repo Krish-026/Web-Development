@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #c4c4c4c4;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover {
+    font-weight: bold;
+}
+
+.rightNav {
+    width: 50%;
+    text-align: right;
+    padding: 0px 30px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    background-color: #efefef;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url("/images/background4.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection {
+    min-height: 100vh;
+    padding: 15px 0px;
+}
+
+.box-main {
+    padding-top: 10vh;
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.secondHalf {
+    width: 30%;
+}
+
+.secondHalf img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white
+}
+
+.text-big {
+    font-size: 40px;
+    padding: 26px 0px;
+}
+
+.text-small {
+    font-size: 20px;
+}
+
+.btn {
+    padding: 8px 10px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 13px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.section {
+    /* height: 393px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section-left {
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 52px 65px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-left .thumbnail img{
+    filter: drop-shadow(-15px 10px 5px #222);
+    margin-top: 31px;
+}
+
+.thumbnail img{
+    width: 235px;
+    height: 194px;
+    border: 3px solid black;
+    filter: drop-shadow(15px 10px 5px #222);
+    margin-top: 31px;
+}
+
+.contact{
+    background-color: #464442;
+    height: 700px;
+}
+
+.text-small{
+    padding: 20px 0px;
+  }
+.text-centre{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form{
+    max-width: 62%;
+    margin: 42px auto;
+}
+
+.form-input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border:2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #efefef;
+}
+
+.div-form textarea{
+    resize: none;
+}
+
+.form-btn{
+    margin: 20px 3px;
+}
+
+
+.text-footer{
+    /* margin-top: 102px; */
+    padding: 30px 0px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}

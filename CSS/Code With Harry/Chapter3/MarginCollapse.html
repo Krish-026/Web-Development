@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Margin Overlap = max(overlap1, overlap2) */
+        .box1{
+            background-color: antiquewhite;
+            margin: 30px;
+            padding: 20px;
+        }
+        .box2{
+            background-color: aquamarine;
+            margin: 30px;
+            padding: 20px;
+        }
+
+/* *************************************************** */
+
+        .box3{
+            background-color: antiquewhite;
+            margin: 30px;
+            height: 800px;
+            width: 300px;
+            border: 3px solid black;
+        }
+        .box4{
+            background-color: aquamarine;
+            height: 20px;
+            width: 100%;
+            padding: 20px;
+            border: 3px solid gray;
+            box-sizing: border-box;
+        }
+
+/* ********************************************* */
+
+        /* box-sizing : content-box 
+        boz-sizing : border-box */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas error odit, expedita beatae nesciunt architecto fugit quia eveniet facere quaerat quasi, ab hic fugiat voluptas cum laudantium cupiditate? Veniam culpa id ex voluptate maxime corrupti placeat iure aut voluptas quia.
+    </div>
+    <div class="box2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas error odit, expedita beatae nesciunt architecto fugit quia eveniet facere quaerat quasi, ab hic fugiat voluptas cum laudantium cupiditate? Veniam culpa id ex voluptate maxime corrupti placeat iure aut voluptas quia.
+    </div>
+    <div class="box3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa sunt iste error non, sed fuga ad facilis culpa expedita eaque distinctio, quas pariatur odio esse illum cumque molestiae aut praesentium. Aut possimus temporibus ad suscipit, sequi totam ipsa minus perspiciatis.
+        <div class="box4">
+
+        </div>
+    </div>
+</body>
+</html>
