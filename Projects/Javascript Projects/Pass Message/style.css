@@ -29,11 +29,11 @@ button{
 button:hover{
     background: rgba(0, 0, 0, 0.5);
 }
+button:active{
+    background: transparent;
+}
 
-.container{
-    border:  1px solid black;
-    
-
+.container{ 
     display: flex;
     width: 95%;
     height: 100vh;
@@ -56,7 +56,7 @@ button:hover{
 
 .message input{
     width: 90%;
-    padding: 8px 0;
+    padding: 8px 5px;
     border-radius: 5px;
     border: 1px solid lightgray;
     border-top-left-radius: 0;
@@ -80,7 +80,9 @@ button:hover{
 #message-output{
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
+
 
 @media(max-width: 480px){
     .message input{
