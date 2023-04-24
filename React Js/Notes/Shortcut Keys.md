@@ -11,6 +11,7 @@ Terminal
 
 React Component
 	rfc = react base component
+	rcc = react class based component
 
 
 CLS - Cumilative Layout Shift
