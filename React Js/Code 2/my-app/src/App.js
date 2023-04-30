@@ -4,6 +4,7 @@ import './App.css';
 import React, { Component } from 'react'
 import NavBar from './Components/NavBar';
 // import News from './Components/News';
+
 import {
   BrowserRouter as Router,
   Route,
