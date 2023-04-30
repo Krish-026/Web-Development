@@ -12,12 +12,14 @@ export class NewsItem extends Component {
     return (
       <div>
         <div className="card" style={{ background: 'rgb(206 206 206)' }}>
-          <img src={imageUrl ? imageUrl : IMAGE} className="card-img-top" alt="..." />
-          <div className="card-body">
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          <div style={{display: 'flex', justifyContent: 'flex-end', position:'absolute', right: '0'}}>
+            <span className="badge rounded-pill bg-danger">
               {source}
               {/* <span class="visually-hidden">unread messages</span> */}
             </span>
+          </div>
+          <img src={imageUrl ? imageUrl : IMAGE} className="card-img-top" alt="..." />
+          <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
             <p className='card-text'><small className='text-muted'>By {author ? author : "Unknown"} on {new Date(date).toGMTString()} </small></p>
