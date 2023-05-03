@@ -11,7 +11,7 @@ import NewsInfiniteScroll from './Components/NewsInfiniteScroll';
 
 const App =()=> {
   const page = 5;
-  const apiKey = process.env.REACT_APP_NEWS_API;
+  const apiKey = process.env.REACT_APP_NEWS_API; // This is stored in .env.local 
   const[progress, setProgress] = useState(0);
     return (
       <>
