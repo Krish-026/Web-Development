@@ -27,7 +27,7 @@ const App =()=> {
 
             </LoadingBar>
             <Routes>
-              <Route exact path='/navbar' element={<NewsInfiniteScroll setProgress={setProgress} key="general" apiKey={apiKey} pageSize={page} country="in" category="general"></NewsInfiniteScroll>}></Route>
+              <Route exact path='/' element={<NewsInfiniteScroll setProgress={setProgress} key="general" apiKey={apiKey} pageSize={page} country="in" category="general"></NewsInfiniteScroll>}></Route>
               <Route exact path='/general' element={<NewsInfiniteScroll setProgress={setProgress} key="general" apiKey={apiKey} pageSize={page} country="in" category="general"></NewsInfiniteScroll>}></Route>
               <Route exact path='/business' element={<NewsInfiniteScroll setProgress={setProgress} key="business" apiKey={apiKey} pageSize={page} country="in" category="business"></NewsInfiniteScroll>}></Route>
               <Route exact path='/entertainment' element={<NewsInfiniteScroll setProgress={setProgress} key="entertainment" apiKey={apiKey} pageSize={page} country="in" category="entertainment"></NewsInfiniteScroll>}></Route>
