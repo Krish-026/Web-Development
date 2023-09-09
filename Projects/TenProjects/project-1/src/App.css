@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:ital,wght@1,300&family=Poppins:wght@200;600&display=swap');
 
 :root {
-  --red: #d01c28;
+  --red: #e63f4b;
+  --hover: rgb(36, 31, 31);
   --gray: #2e2e2e;
 }
 
@@ -37,8 +38,14 @@ button{
   all: unset;
   padding: 0.5rem 1rem;
   background: var(--red);
+  border-radius: 5px;
   color: white;
   font-weight: 500;
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--hover);
+  transition: 0.3s ease-in;
 }
 
 .container{
@@ -78,6 +85,9 @@ button{
   background: transparent;
   border: 1px solid var(--gray);
   color: var(--gray);
+}
+.secondary-btn:hover{
+  color: white;
 }
 
 .shopping p {
