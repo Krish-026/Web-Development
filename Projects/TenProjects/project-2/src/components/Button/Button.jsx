@@ -1,9 +1,8 @@
 import styles from './Button.module.css'
 import PropTypes from 'prop-types'
-function Button(props) {   
-    const {isOutline, text, icon} = props;
+function Button({isOutline, text, icon, ...rest}) {   
   return ( 
-    <button className={isOutline ? `${styles.outline_btn}` : `${styles.primary_btn}`}>
+    <button {...rest} className={isOutline ? `${styles.outline_btn}` : `${styles.primary_btn}`}>
         {icon}
         {text}
     </button>

@@ -10,5 +10,3 @@ Move code up `alt + upArrow`
 Copy line `Ctrl + alt + upOrDownArrow`
 Break infinite line `alt + z`
 Align All item `Shit + alt + f` 
-
-Time Span `49:19`
