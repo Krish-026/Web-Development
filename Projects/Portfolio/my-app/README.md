@@ -17,3 +17,9 @@ Currently, two official plugins are available:
 ###  `npm run dev` ###
 ###  ` Add this in vite.config.js - css:modules:{localsConvention: 'camelCase'}}` ###
 ###  `` ###
+###  `` ###
+###  `pause : 38:32` ###
+###  `pause : 1:04:00` ###
+###  `Complete` ###
+###  `npm run build` ###
+###  `npm run preview` ###
